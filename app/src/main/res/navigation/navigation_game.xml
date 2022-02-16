@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.ubaya.adv160419094week2hw.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        android:label="Main Fragment"
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/actionResultFragment"
             app:destination="@id/resultFragment"
@@ -19,8 +19,8 @@
     <fragment
         android:id="@+id/resultFragment"
         android:name="com.ubaya.adv160419094week2hw.ResultFragment"
-        android:label="fragment_result"
-        tools:layout="@layout/fragment_result" >
+        android:label="Result Fragment"
+        tools:layout="@layout/fragment_result">
         <action
             android:id="@+id/actionMainFragment"
             app:destination="@id/mainFragment"
@@ -28,7 +28,7 @@
             app:exitAnim="@android:anim/slide_out_right" />
         <argument
             android:name="score"
-            app:argType="integer"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            app:argType="integer" />
     </fragment>
 </navigation>
